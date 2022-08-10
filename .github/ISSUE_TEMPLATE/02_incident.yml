@@ -34,11 +34,10 @@ body:
       label: Impact stopped
       description: When effects of the incident stopped / we recovered. If in the course of mitigation, the effects re-appear, give the time that they stopped the last time.
 
-  - type: textarea
+  - type: markdown
     attributes:
-      label: Detailed timeline
-      description: |
-        This can be a pretty short or very long and detailed list of that events occurred, when they happened, and how they relate to the incident. Keep in mind that incidents happen because complicated systems interact with each other in unexpected ways!
+      value: |
+        The timeline can be a pretty short or very long and detailed list of that events occurred, when they happened, and how they relate to the incident. Keep in mind that incidents happen because complicated systems interact with each other in unexpected ways!
 
         So, a timeline should answer the following questions:
             * What were the events that conspired for this to become possible
@@ -46,6 +45,10 @@ body:
             * How did these events affect:
               * our understanding of the situation
               * the effects of the incident
+
+  - type: textarea
+    attributes:
+      label: Detailed timeline
   - type: textarea
     attributes:
       label: Hazards identified
