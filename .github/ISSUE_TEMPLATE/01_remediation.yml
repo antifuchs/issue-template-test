@@ -1,6 +1,6 @@
 name: Incident remediation
 description: File a follow-up recommendation to an incident
-title: ""
+title: "Remediation: "
 labels: ["TRIAGE"]
 body:
   - type: input
