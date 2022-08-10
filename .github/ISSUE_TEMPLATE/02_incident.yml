@@ -40,11 +40,11 @@ body:
         The timeline can be a pretty short or very long and detailed list of that events occurred, when they happened, and how they relate to the incident. Keep in mind that incidents happen because complicated systems interact with each other in unexpected ways!
 
         So, a timeline should answer the following questions:
-            * What were the events that conspired for this to become possible
-            * When did those events happen
-            * How did these events affect:
-              * our understanding of the situation
-              * the effects of the incident
+          * What were the events that conspired for this to become possible
+          * When did those events happen
+          * How did these events affect:
+            * our understanding of the situation
+            * the effects of the incident
 
   - type: textarea
     attributes:
