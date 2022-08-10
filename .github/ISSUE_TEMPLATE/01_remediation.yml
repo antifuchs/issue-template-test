@@ -1,0 +1,21 @@
+name: Incident remediation
+description: File a follow-up recommendation to an incident
+title: ""
+labels: ["TRIAGE"]
+body:
+  - type: input
+    id: incident-ref
+    attributes:
+      label: Incident issue number
+    validations:
+      required: true
+  - type: textarea
+    id: hazard
+    attributes:
+      label: What Hazard does this address?
+    validations:
+      required: false
+  - type: textarea
+    id: remediation
+    attributes:
+      label: What action should we take to mitigate this hazard?
