@@ -1,0 +1,15 @@
+name: Issue
+description: A thing we should fix or do
+body:
+  - type: textarea
+    attributes:
+      label: What's wrong?
+      description: |
+        Describe what's bad.
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: What should we do?
+    validations:
+      required: true
