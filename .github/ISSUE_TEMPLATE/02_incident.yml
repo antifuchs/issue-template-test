@@ -1,0 +1,82 @@
+name: Incident report
+title: "YYYY-MM-DD: <describe the incident>"
+description: >
+  An issue impacting service to our customers on the cloud product.
+labels: ["C-incident"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This issue template creates a "tracking issue" ticket
+        for production incidents - events where our product
+        caused us or our users measurable, often costly pain. In
+        contrast to other "tracking" issues, this issue is
+        considered closed when all the follow-up recommendations
+        are reported in our issues system here, not when the
+        corresponding issues are resolved.
+
+        Please keep timestamps in one timezone, ideally UTC!
+  - type: input
+    attributes:
+      label: What happened?
+      description: |
+        Give a short, one-sentence description of the incident here.
+        Focus on the what was erroring, who saw it, and how long.
+        E.g., "Binary downloads resulted in 403 errors for 4 days".
+    validations:
+      required: true
+
+  - type: input
+    id: impact-start
+    attributes:
+      label: Impact started
+      description: When the effects of the incident started
+  - type: input
+    id: impact-noticed
+    attributes:
+      label: Impact noticed
+      description: When we were made aware of the effects (monitor alerted a person, etc.)
+  - type: input
+    id: impact-stopped
+    attributes:
+      label: Impact stopped
+      description: When effects of the incident stopped / we recovered. If in the course of mitigation, the effects re-appear, give the time that they stopped the last time.
+
+  - type: textarea
+    attributes:
+      label: Detailed timeline
+      description: |
+        This can be a pretty short or very long and detailed list of that
+        events occurred, when they happened, and how they relate to the
+        incident. Keep in mind that incidents happen because complicated
+        systems interact with each other in unexpected ways!
+
+        So, a timeline should answer the following questions:
+            * What were the events that conspired for this to become possible
+            * When did those events happen
+            * How did these events affect:
+              * our understanding of the situation
+              * the effects of the incident
+  - type: textarea
+    attributes:
+      label: Hazards identified
+      description: |
+        From the timeline, pull out the things that affected the course of the incident:
+          * Where did we get lucky? (Things that didn't fail that could very well have failed and made the situation worse)
+          * Where did we get *un*lucky? (Things that failed together)
+          * What tools/data did you wish you had during the incident
+
+  - type: textarea
+    attributes:
+      label: Follow-up recommendations
+      description: |
+        List here the things that we need to do to make it less
+        likely for this kind of incident, under these
+        circumstances, to happen again. Examples for good items
+        are concrete improvements to monitoring and alerting,
+        blast radius reduction, redundancy.
+
+        File these issues with the "Incident remediation"
+        template to make things go smoothly. Once you have
+        filled out this section and filed issues (ideally linked
+        here) for each of them, please close this ticket.
