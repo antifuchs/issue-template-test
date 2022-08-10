@@ -7,22 +7,14 @@ body:
   - type: markdown
     attributes:
       value: |
-        This issue template creates a "tracking issue" ticket
-        for production incidents - events where our product
-        caused us or our users measurable, often costly pain. In
-        contrast to other "tracking" issues, this issue is
-        considered closed when all the follow-up recommendations
-        are reported in our issues system here, not when the
-        corresponding issues are resolved.
+        This issue template creates a "tracking issue" ticket for production incidents - events where our product caused us or our users measurable, often costly pain. In contrast to other "tracking" issues, this issue is considered closed when all the follow-up recommendations are reported in our issues system here, not when the corresponding issues are resolved.
 
         Please keep timestamps in one timezone, ideally UTC!
   - type: input
     attributes:
       label: What happened?
       description: |
-        Give a short, one-sentence description of the incident here.
-        Focus on the what was erroring, who saw it, and how long.
-        E.g., "Binary downloads resulted in 403 errors for 4 days".
+        Give a short, one-sentence description of the incident here. Focus on the what was erroring, who saw it, and how long. E.g., "Binary downloads resulted in 403 errors for 4 days".
     validations:
       required: true
 
@@ -46,10 +38,7 @@ body:
     attributes:
       label: Detailed timeline
       description: |
-        This can be a pretty short or very long and detailed list of that
-        events occurred, when they happened, and how they relate to the
-        incident. Keep in mind that incidents happen because complicated
-        systems interact with each other in unexpected ways!
+        This can be a pretty short or very long and detailed list of that events occurred, when they happened, and how they relate to the incident. Keep in mind that incidents happen because complicated systems interact with each other in unexpected ways!
 
         So, a timeline should answer the following questions:
             * What were the events that conspired for this to become possible
@@ -70,13 +59,6 @@ body:
     attributes:
       label: Follow-up recommendations
       description: |
-        List here the things that we need to do to make it less
-        likely for this kind of incident, under these
-        circumstances, to happen again. Examples for good items
-        are concrete improvements to monitoring and alerting,
-        blast radius reduction, redundancy.
+        List here the things that we need to do to make it less likely for this kind of incident, under these circumstances, to happen again. Examples for good items are concrete improvements to monitoring and alerting, blast radius reduction, redundancy.
 
-        File these issues with the "Incident remediation"
-        template to make things go smoothly. Once you have
-        filled out this section and filed issues (ideally linked
-        here) for each of them, please close this ticket.
+        File these issues with the "Incident remediation" template to make things go smoothly. Once you have filled out this section and filed issues (ideally linked here) for each of them, please close this ticket.
